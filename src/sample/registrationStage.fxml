@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="765.0" style="-fx-background-color: #ffb3da;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegistrationController">
+   <children>
+      <TextField fx:id="nameFieldREG" prefHeight="50.0" promptText="Name" style="-fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-color: #99ceff; -fx-border-width: 5px;">
+         <VBox.margin>
+            <Insets bottom="20.0" left="50.0" right="50.0" top="150.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Corbel Light" size="20.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordFieldREG" prefHeight="50.0" promptText="Password" style="-fx-background-radius: 20px; -fx-border-color: #99ceff; -fx-border-radius: 20px; -fx-border-width: 5px;">
+         <VBox.margin>
+            <Insets bottom="20.0" left="50.0" right="50.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Corbel Light" size="20.0" />
+         </font></PasswordField>
+      <PasswordField fx:id="confirmPassFieldREG" prefHeight="50.0" promptText="Confirm password" style="-fx-background-radius: 20px; -fx-border-color: #99ceff; -fx-border-radius: 20px; -fx-border-width: 5px;">
+         <VBox.margin>
+            <Insets bottom="20.0" left="50.0" right="50.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Corbel Light" size="20.0" />
+         </font></PasswordField>
+      <Button mnemonicParsing="false" onAction="#onSignUpClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 5em; -fx-background-color: #99ceff;" text="Sign Up">
+         <font>
+            <Font name="Corbel Light" size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin></Button>
+      <HBox alignment="CENTER">
+         <children>
+            <Label fx:id="messageRegistration" alignment="CENTER" textAlignment="CENTER">
+               <font>
+                  <Font name="Corbel Light" size="20.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT">
+         <children>
+            <Button mnemonicParsing="false" onAction="#backtoLoginButton" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 5em; -fx-background-color: #99ceff;" text="Back">
+               <font>
+                  <Font name="Corbel Light" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Button>
+         </children>
+         <VBox.margin>
+            <Insets top="90.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

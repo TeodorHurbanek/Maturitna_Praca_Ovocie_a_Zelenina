@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="765.0" style="-fx-background-color: #ffe6f3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProfilController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="200.0">
+         <children>
+            <ImageView fx:id="userIMG" fitHeight="130.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <Label fx:id="nameProfil">
+         <font>
+            <Font name="Corbel Light" size="30.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin></Label>
+      <Button mnemonicParsing="false" onAction="#onFavoritesButtonClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #99ceff; -fx-background-radius: 5em;" text="Liked">
+         <font>
+            <Font name="Corbel Light" size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin></Button>
+      <Button mnemonicParsing="false" onAction="#onLogOutClick" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #99ceff; -fx-background-radius: 5em;" text="Log out">
+         <font>
+            <Font name="Corbel Light" size="15.0" />
+         </font></Button>
+   </children>
+</VBox>

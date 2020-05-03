@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="765.0" style="-fx-background-color: #ffe6f3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FavoritesController">
+   <children>
+      <TableView fx:id="favoriteTable" stylesheets="@../css/table.css">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="55.0" text="ID" />
+          <TableColumn fx:id="col_favorites" prefWidth="327.0" text="Favorites" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="10.0" left="50.0" right="50.0" top="100.0" />
+         </VBox.margin>
+      </TableView>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <TextField fx:id="deleteField" prefHeight="40.0" prefWidth="100.0" promptText="id" style="-fx-background-radius: 20px; -fx-border-color: #99ceff; -fx-border-radius: 20px; -fx-border-width: 5px;">
+               <font>
+                  <Font name="Corbel Light" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></TextField>
+            <Button mnemonicParsing="false" onAction="#onDeleteClick" prefHeight="40.0" prefWidth="70.0" style="-fx-background-color: #99ceff; -fx-background-radius: 20px;" text="Delete">
+               <font>
+                  <Font name="Corbel Light" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></Button>
+            <Label fx:id="messageDelete">
+               <font>
+                  <Font name="Corbel Light" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></Label>
+         </children>
+         <VBox.margin>
+            <Insets left="50.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_RIGHT">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#backtoProfilButton" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: #99ceff; -fx-background-radius: 5em;" text="Back">
+               <font>
+                  <Font name="Corbel Light" size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets right="10.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

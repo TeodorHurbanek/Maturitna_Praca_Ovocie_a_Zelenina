@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <top>
+      <HBox alignment="CENTER" style="-fx-background-color: linear-gradient(to left, #99ceff, #ffb3da);" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logoIMG" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin></ImageView>
+            <Label text="Vitamins" textFill="WHITE">
+               <font>
+                  <Font name="Vivaldi Italic" size="70.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin></Label>
+            <MenuButton alignment="CENTER" mnemonicParsing="false" prefHeight="83.0" prefWidth="83.0" style="-fx-background-radius: 5em; -fx-background-color: #ffb3da;" text="Menu">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#onFruitsClick" style="-fx-background-color: linear-gradient(to left, #99ceff, #ffb3da); -fx-background-radius: 5em;" text=" Fruit and Vegetables" />
+                  <MenuItem mnemonicParsing="false" onAction="#onOpeningClick" style="-fx-background-color: linear-gradient(to left, #99ceff, #ffb3da); -fx-background-radius: 5em;" text=" Opening                   " />
+                  <MenuItem mnemonicParsing="false" onAction="#onProfilClick" style="-fx-background-radius: 5em; -fx-background-color: linear-gradient(to left, #99ceff, #ffb3da);" text=" Profile                       " />
+              </items>
+               <font>
+                  <Font name="Corbel Light" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </MenuButton>
+            <Button mnemonicParsing="false" onAction="#onLoginClick" prefHeight="83.0" prefWidth="83.0" style="-fx-background-radius: 5em; -fx-background-color: #ffb3da;" text="Login">
+               <font>
+                  <Font name="Corbel Light" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox style="-fx-background-color: linear-gradient(to left, #99ceff, #ffb3da);" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="©teodorhurbanek2020">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Corbel Light" size="15.0" />
+               </font></Label>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

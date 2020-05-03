@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="765.0" style="-fx-background-color: #ffe6f3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FruitsController">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <ImageView fx:id="orangeIMG" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button mnemonicParsing="false" onAction="#onOrangeClick" style="-fx-background-radius: 5em; -fx-background-color: #99ceff;" text="Orange">
+                     <font>
+                        <Font name="Corbel Light" size="15.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER">
+               <children>
+                  <ImageView fx:id="appleIMG" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button mnemonicParsing="false" onAction="#onAppleClick" style="-fx-background-radius: 5em; -fx-background-color: #99ceff;" text="Apple">
+                     <font>
+                        <Font name="Corbel Light" size="15.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER">
+               <children>
+                  <ImageView fx:id="kiwiIMG" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button mnemonicParsing="false" onAction="#onKiwiClick" style="-fx-background-radius: 5em; -fx-background-color: #99ceff;" text="Kiwi">
+                     <font>
+                        <Font name="Corbel Light" size="15.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets top="100.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER">
+               <children>
+                  <ImageView fx:id="carrotIMG" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button mnemonicParsing="false" onAction="#onCarrotClick" style="-fx-background-radius: 5em; -fx-background-color: #99ceff;" text="Carrot">
+                     <font>
+                        <Font name="Corbel Light" size="15.0" />
+                     </font></Button>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER">
+               <children>
+                  <ImageView fx:id="tomatoIMG" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button mnemonicParsing="false" onAction="#onTomatoClick" style="-fx-background-radius: 5em; -fx-background-color: #99ceff;" text="Tomato">
+                     <font>
+                        <Font name="Corbel Light" size="15.0" />
+                     </font></Button>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER">
+               <children>
+                  <ImageView fx:id="cucumberIMG" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button mnemonicParsing="false" onAction="#onCucumberClick" style="-fx-background-radius: 5em; -fx-background-color: #99ceff;" text="Cucumber">
+                     <font>
+                        <Font name="Corbel Light" size="15.0" />
+                     </font></Button>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
